@@ -1,0 +1,10 @@
+title: Reina Reyes
+description: >
+  reinareyes.com
+baseurl: ""
+url: ""
+
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock

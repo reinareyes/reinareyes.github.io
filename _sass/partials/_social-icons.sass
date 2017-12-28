@@ -1,0 +1,43 @@
+$social-default-icon-color: #fff
+$social-default-btn-color: #666
+$social-icon-size: 30px
+$social-icon-border: 2px
+$social-icon-border-radius: 5px
+
+$social-color-facebook: #3b5998
+$social-color-twitter: #00aced
+
+$brand-color: #006FC2
+
+.social-icons
+  border-top: 1px solid $black
+  border-bottom: 1px solid $black
+
+.icon-link
+  width: $social-icon-size
+  height: $social-icon-size
+  background-color: $social-default-btn-color
+  line-height: $social-icon-size
+  text-align: center
+  vertical-align: middle
+  display: inline-block
+  cursor: pointer
+  outline: none
+  margin: 5px
+  @include box-sizing(content-box)
+
+  &.brand
+    background-color: #fff
+    .fab
+      color: $brand-color
+
+  .fab
+    line-height: $social-icon-size
+    font-size: $social-icon-size - $social-icon-size * 0.40
+    &.fa-facebook-f
+      color: $social-color-facebook
+    &.fa-twitter
+      color: $social-color-twitter
+    &:hover
+      color: $social-default-btn-color
+      @include transition(color 150ms ease-in-out)

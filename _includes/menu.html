@@ -1,0 +1,22 @@
+{% assign current = page.title | downcase %}
+
+<ul class="list-reset">
+  <li class="inline-block mr1">
+    <a {% if current == 'home' %}class='text-decoration-none black underline'{% else %}class='text-decoration-none black'{% endif %} href="/">Home</a>
+  </li>
+  <li class="inline-block mr1">
+    <a {% if current == 'about' %}class='text-decoration-none black underline'{% else %}class='text-decoration-none black'{% endif %} href="/about">About</a>
+  </li>
+  <li class="inline-block mr1">
+    <a {% if current == 'talks' %}class='text-decoration-none black underline'{% else %}class='text-decoration-none black'{% endif %} href="/talks">Talks</a>
+  </li>
+  <li class="inline-block mr1">
+    <a {% if current == 'book' %}class='text-decoration-none black underline'{% else %}class='text-decoration-none black'{% endif %} href="/book">Book</a>
+  </li>
+  <li class="inline-block mr1">
+    <a {% if current == 'art' %}class='text-decoration-none black underline'{% else %}class='text-decoration-none black'{% endif %} href="/art">Art</a>
+  </li>
+  <li class="inline-block mr1">
+    <a {% if current == 'contact' %}class='text-decoration-none black underline'{% else %}class='text-decoration-none black'{% endif %} href="/contact">Contact</a>
+  </li>
+</ul>
